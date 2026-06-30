@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 
 services:
 
@@ -20,7 +20,6 @@ services:
     networks:
       - talent-network
 
-
   backend:
     image: karthikan123/talent-search-backend:latest
     container_name: backend
@@ -39,7 +38,6 @@ services:
     networks:
       - talent-network
 
-
   frontend:
     image: karthikan123/talentsearch-frontend:latest
     container_name: frontend
@@ -52,7 +50,6 @@ services:
 
     networks:
       - talent-network
-
 
 volumes:
   postgres_data:
